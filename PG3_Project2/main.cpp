@@ -21,7 +21,7 @@ int main() {
 
 	for (auto itr = Station.begin(); itr != Station.end(); ++itr)
 	{
-		if (*itr == "Nippori")
+		if (strcmp(*itr, "Nippori") == 0)
 		{
 			itr = Station.insert(itr, "Nishinippori");
 			itr++;
@@ -36,7 +36,7 @@ int main() {
 
 	for (auto itr = Station.begin(); itr != Station.end(); ++itr)
 	{
-		if (*itr == "Shinagawa")
+		if (strcmp(*itr, "Shinagawa") == 0)
 		{
 			itr = Station.insert(itr, "Takanawa Gateway");
 			itr++;
